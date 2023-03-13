@@ -1,0 +1,14 @@
+{{ template "header.html" }}
+
+{{ range .products }}
+<ul>
+    <li>Id: {{ .ID }}</li>
+    <li>Name: {{ .Name }}</li>
+    <li>Description: {{ .Description }}</li>
+    <li>Price: {{ .Price }}</li>
+    <li>Weight: {{ .Weight }}</li>
+    <li>Ingredients: {{ .Ingredients }}</li>
+</ul>
+{{ end }}
+
+{{ template "footer.html" }}
